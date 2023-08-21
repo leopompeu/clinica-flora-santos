@@ -1,0 +1,16 @@
+.background-accessibility{
+    top: 0;
+    position: fixed;
+    height: 35px;
+    width: 100vw;
+    background-color: #0B3324;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    background: var(--green-900, #032015);
+    z-index: 100;
+
+}

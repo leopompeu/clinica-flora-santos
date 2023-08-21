@@ -1,0 +1,100 @@
+.section-faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 42px;
+}
+
+.title-section-faq{
+    color: var(--yellow-500, #B7B16C);
+    /* Body/XL */
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 35.2px */
+    letter-spacing: -0.22px;
+}
+
+.subtitle-section-faq{
+    color: var(--green-900, #032015);
+    /* Heading/L */
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 48px */
+    letter-spacing: 0.4px;
+    margin-top: -1%;
+
+}
+
+.faq-row-wrapper {
+
+    .faq-body {
+        .faq-row {
+            
+            .row-title {
+                margin-left: 24px;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%; /* 24px */
+                letter-spacing: -0.16px;
+            }
+
+            .row-content {
+                .row-content-text {
+                    margin-top: 42px;
+                    margin-bottom: 42px;
+                    margin-left: 24px;
+                    margin-right: 24px;
+                    color: var(--green-700, #0B3324);
+                    /* Body/S */
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; /* 21px */
+                    letter-spacing: -0.14px;
+                }
+            }
+        }
+    }
+}
+
+/* MOBILE */
+
+.section-faq-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.title-section-faq-mobile{
+    color: var(--yellow-500, #B7B16C);
+
+    /* Body/XS */
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+    line-height: 140%; /* 28px */
+}
+
+.subtitle-section-faq-mobile{
+    margin-top: -10%;
+    color: var(--green-900, #032015);
+
+    /* Heading/XS */
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 28px */
+}

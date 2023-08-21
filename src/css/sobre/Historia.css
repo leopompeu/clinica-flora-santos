@@ -1,0 +1,108 @@
+.section-historia-sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.content-hisotira-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 570px;
+    flex-direction: column;
+}
+
+.div-title-historia-sobre{
+    display: flex;
+    width: 570px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+}
+
+.title-historia-sobre{
+    color: var(--green-700, #0B3324);
+
+    /* Heading/L */
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 48px */
+    letter-spacing: 0.4px;
+
+}
+
+.text-historia-sobre{
+    color: #000;
+
+    /* Body/M */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.16px;
+
+    align-self: stretch;
+
+    width: 570px;
+
+    margin-top: -2.5%;
+}
+
+.flora-santos-foto-sobre{
+    width: 510px;
+    height: 680px
+}
+
+/* MOBILE */
+
+.section-historia-sobre-mobile{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 5%;
+}
+
+.flora-santos-foto-sobre-mobile{
+    width: 102%;
+    margin-bottom: 14px;
+}
+
+.div-title-historia-sobre-mobile{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.title-historia-sobre-mobile{
+    color: var(--green-700, #0B3324);
+
+    /* Heading/XS */
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 28px */
+}
+
+.text-historia-sobre-mobile{
+    margin-top: -2.5%;
+
+    width: 90%;
+    
+    color: #000;
+    text-align: center;
+
+    /* Body/XS */
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+}

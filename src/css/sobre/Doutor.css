@@ -1,0 +1,172 @@
+/* WEB */
+
+.section-doutor-sobre{
+    background: var(--yellow-100, #F2F0DA);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.div-content-doutor{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1%;
+}
+
+.div-title-section-doutor-sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 570px;
+}
+
+.title-section-doutor-sobre{
+    color: var(--green-400, #2F5446);
+
+    margin-bottom: -7.5%;
+
+    /* Body/XL */
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 35.2px */
+    letter-spacing: -0.22px;
+}
+
+.subtitle-section-doutor-sobre{
+    color: var(--green-900, #032015);
+
+    /* Heading/L */
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 48px */
+    letter-spacing: 0.4px;
+}
+
+.itens-doutor-sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1%;
+}
+
+.div-title-item-doutor-sobre{
+    display: flex;
+    justify-items: left;
+    align-items: center;
+    gap: 18px;
+    width: 570px;
+}
+
+.title-item-doutor-sobre{
+    color: var(--green-700, #0B3324);
+
+    /* Body/M */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.16px;
+}
+
+.text-item-doutor-sobre{
+    margin-top: -1%;
+
+    color: #000;
+    /* Body/M */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.16px;
+
+    align-self: stretch;
+
+    width: 570px;
+}
+
+.div-item-doutor-sobre{
+    display: flex;
+    flex-direction: column;
+}
+
+.doutor-foto-sobre{
+    width: 510px;
+    height: 680px
+}
+
+/* MOBILE */
+
+.doutor-foto-sobre-mobile{
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.section-doutor-sobre-mobile{
+    display: flex;
+    gap: 12px;
+    background: var(--yellow-100, #F2F0DA);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.subtitle-section-doutor-sobre-mobile{
+    margin-top: -1%;
+    color: var(--green-900, #032015);
+
+    /* Heading/XS */
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 28px */
+}
+
+.div-title-item-doutor-sobre-mobile{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    gap: 12px;
+}
+
+.title-item-doutor-sobre-mobile{
+    color: var(--green-700, #0B3324);
+
+    /* Body/XS */
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+}
+
+.text-item-doutor-sobre-mobile{
+    margin-top: -2.5%;
+    color: var(--green-700, #0B3324);
+
+    /* Body/XS */
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+    
+    width: 80%;
+}
+
+.icon-item-doutor-sobre{
+    height: 25px;
+}

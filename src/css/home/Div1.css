@@ -1,0 +1,160 @@
+.section-apresentacao{
+    width: 100vw;
+    height: 45vw;
+    box-shadow: 0px 4px 150px 5px rgba(0, 0, 0, 0.15) inset;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-big{
+    background-image: url(../../assets/flora-santos-bg.webp);
+
+}
+
+.bg-small{
+    background-image: url(../../assets/flora-santos-bg-small.webp);
+
+}
+
+.container-div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: var(--green-900, #032015);
+    width: 570px;
+    /* Heading/XL */
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: 0.48px;
+    align-self: stretch;
+    color: #032015;
+}
+
+.subtitle{
+    width: 570px;
+    align-self: stretch;
+    color: var(--green-700, #0B3324);
+
+    /* Body/M */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.16px;
+    color: #0B3324;
+}
+
+.button-agendar-div1{
+    display: flex;
+    justify-self: end;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 12px;
+    background: var(--yellow-500, #0B3324);
+    color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: transform .2s;
+  }
+
+  .button-agendar-div1:hover{
+    transform: scale(1.2);
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    border: #F2F0DA00;
+  }
+
+  .video-playbutton{
+    transition: transform .2s;
+  }
+
+  .video-playbutton:hover{
+    transform: scale(1.2);
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+  }
+
+  .first-part{
+    margin-right: 30px;
+  }
+
+  .effect-div1{
+    width: 65%;
+    margin-top: -550px;
+    margin-left: 200px;
+
+  }
+
+  /* MOBILE */
+
+  .section-apresentacao-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50%;
+    gap: 12px;
+    width: 100vw;
+    padding-bottom: 20%;
+
+    background-image: url(../../assets/bg-div1-mobile.webp);
+
+}
+
+.title-mobile{
+    color: var(--green-900, #032015);
+    text-align: center;
+
+    /* Heading/XS */
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 28px */
+
+    width: 360px;
+}
+
+.subtitle-mobile{
+    color: var(--green-700, #0B3324);
+    text-align: center;
+
+    /* Body/XS */
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+
+    width: 360px;
+}
+
+.button-agendar-div1-mobile{
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--neutral-white, #FFF);
+
+    /* Button/S */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: -0.14px;
+}

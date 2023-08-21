@@ -1,0 +1,110 @@
+/* WEB */
+
+.section-chamariz{
+    background: var(--yellow-100, #F2F0DA);
+    background-image: url(../../assets/art-acupuntura.webp);
+    background-repeat: no-repeat;
+    background-position: 70vw;
+    box-shadow: 0px 5px 150px 10px rgba(0, 0, 0, 0.15);
+    height: 530px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-chamariz{
+    color: var(--green-900, #032015);
+    /* Heading/M */
+    font-family: Playfair Display;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 41.6px */
+    width: 570px;
+
+}
+
+.text-chamariz{
+    color: var(--green-700, #0B3324);
+
+    /* Body/M */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.16px;
+    align-self: stretch;
+    width: 485px;
+
+}
+
+.chamariz-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.img-small{
+    width: 100%;
+}
+
+.image-chamariz{
+    width: 30%;
+}
+
+/* MOBILE */
+
+.section-chamariz-mobile{
+    background: var(--yellow-100, #F2F0DA);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    gap: 24px;
+}
+
+.title-chamariz-mobile{
+    width: 360px;
+
+    color: var(--green-900, #032015);
+    text-align: center;
+
+    /* Heading/XS */
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 28px */
+
+    margin-bottom: -1%;
+}
+
+.text-chamariz-mobile{
+    width: 360px;
+
+    color: var(--green-700, #0B3324);
+    text-align: center;
+
+    /* Body/XS */
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+}
+
+.image-chamariz-mobile{
+    width: 360px;
+    height: 203px;
+    flex-shrink: 0;
+
+    border-radius: 6px;
+}

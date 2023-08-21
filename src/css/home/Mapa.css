@@ -1,0 +1,101 @@
+/* WEB */
+
+.section-mapa{
+    background: var(--green-100, #C8DCD4);
+}
+
+.under-mapa{
+    display: flex;
+    padding: 24px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.title-mapa{
+    color: var(--green-900, #032015);
+
+    /* Bold/XL */
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 35.2px */
+    letter-spacing: -0.22px;
+}
+
+.button-mapa{
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 12px;
+    background: var(--green-700, #0B3324);
+
+    color: var(--neutral-white, #FFF);
+
+    /* Button/S */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: -0.14px;
+
+    transition: transform .2s;
+}
+
+.button-mapa:hover{
+    transform: scale(1.2);
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    border: #00000000;
+}
+
+/* MOBILE */
+
+.section-mapa-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    background: var(--green-100, #C8DCD4);
+
+    padding: 0px 0px 24px 0px;
+}
+
+.title-mapa-mobile{
+    color: var(--green-900, #032015);
+
+    /* Bold/S */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.14px;
+}
+
+.button-mapa-mobile{
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 12px;
+    background: var(--green-700, #0B3324);  
+
+    color: var(--neutral-white, #FFF);
+
+    /* Button/S */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: -0.14px;
+}

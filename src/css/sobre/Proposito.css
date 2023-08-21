@@ -1,0 +1,75 @@
+/* WEB */
+
+.section-proposito-sobre{
+    display: flex;
+    padding: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--green-100, #C8DCD4);
+}
+
+.title-proposito-sobre{
+    color: var(--green-900, #032015);
+    text-align: center;
+    /* Heading/L */
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 48px */
+    letter-spacing: 0.4px;
+
+    width: 1150px;
+}
+
+.subtitle-proposito-sobre{
+    color: var(--green-400, #2F5446);
+    /* Body/XL */
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 35.2px */
+    letter-spacing: -0.22px;
+}
+
+/* MOBILE */
+
+.section-proposito-sobre-mobile{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--green-100, #C8DCD4);
+}
+
+.title-proposito-sobre-mobile{
+    color: var(--green-900, #032015);
+    text-align: center;
+
+    /* Heading/XS */
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 28px */
+
+    width: 85%;
+}
+
+.subtitle-proposito-sobre-mobile{
+    margin-top: -2.5%;
+    color: var(--green-400, #2F5446);
+    text-align: center;
+
+    /* Body/XS */
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+}

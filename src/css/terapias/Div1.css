@@ -1,0 +1,115 @@
+/* WEB */
+
+.section-div1-terapias{
+    background: var(--yellow-100, #F2F0DA);
+    height: 50vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-div1-terapias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.title-div1-terapias{
+    color: #000;
+    /* Heading/XL */
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: 0.48px;
+
+    width: 570px;
+}
+
+.arte-terapia-div1{
+    width: 35vw;
+}
+
+.button-agendar-div1-terapias{
+    display: inline-flex;
+    padding: 18px 36px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: var(--green-700, #0B3324);
+
+    color: var(--neutral-white, #FFF);
+    /* Button/L */
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.18px;
+
+    transition: all .2s ease;
+}
+
+.button-agendar-div1-terapias:hover{
+    transform: scale(1.2);
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    border: #F2F0DA00;
+}
+
+/* MOBILE */
+
+.section-div1-terapias-mobile{
+    background: var(--yellow-100, #F2F0DA);
+    padding-top: 30%;
+    padding-bottom: 10%;
+    width: 100vw;
+    gap: 12PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-div1-terapias-mobile{
+    color: var(--green-900, #032015);
+    text-align: center;
+
+    /* Heading/XS */
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 28px */
+
+    width: 360px;
+}
+
+.button-agendar-div1-terapias-mobile{
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 12px;
+    background: var(--green-700, #0B3324);
+
+    color: var(--neutral-white, #FFF);
+
+    /* Button/S */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: -0.14px;
+}
+
+.arte-terapia-div1-mobile{
+    width: 80%;
+    flex-shrink: 0;
+}
