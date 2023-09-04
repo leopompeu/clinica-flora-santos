@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import FAQ from './FAQ'
 import Carousel from 'nuka-carousel'
+import { imagePostPrincipal, imagePosts, imagePosts2 } from '../../assets'
 
 const Blog = ({thisArray}) => {
 
@@ -147,11 +148,11 @@ const Blog = ({thisArray}) => {
                                 <p className='info-text-bold'>{time}</p>
                             </div>
                         </div>
-                        <img src={image} className='image-blog' alt='Imagem de capa do artigo em evidência sobre a Acupuntura e afins'/>
+                        <img src={imagePostPrincipal} className='image-blog' alt='Imagem de capa do artigo em evidência sobre a Acupuntura e afins'/>
                     </div>
                     <div className='secondary-posts'>
                         <div className='secondary-post' onClick={()=>window.open(window.location.href + 'Blog/posts/' + thisArray[1].title.rendered.replace(/[^\w\s]/gi, '').replace(/ /g, "-").replace(",", ""), "_self")}>
-                            <img src={image2} className='image-secondary-post' alt='Imagem de capa do artigo secundario sobre a Acupuntura e afins'/>
+                            <img src={imagePosts} className='image-secondary-post' alt='Imagem de capa do artigo secundario sobre a Acupuntura e afins'/>
                             <div className='secondary-post-content'>
                                 <h4 className='secondary-post-title'>{thisArray[1].title.rendered.substring(0,40) + '...'}</h4>
                                 <p className='secondary-post-text'>{thisArray[1].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,297) + '...'}</p>
@@ -163,7 +164,7 @@ const Blog = ({thisArray}) => {
                             </div>
                         </div>
                         <div className='secondary-post' onClick={()=>window.open(window.location.href + 'Blog/posts/' + thisArray[2].title.rendered.replace(/[^\w\s]/gi, '').replace(/ /g, "-").replace(",", ""), "_self")}>
-                            <img src={image2} className='image-secondary-post' alt='Imagem de capa do artigo secundario sobre a Acupuntura e afins'/>
+                            <img src={imagePosts2} className='image-secondary-post' alt='Imagem de capa do artigo secundario sobre a Acupuntura e afins'/>
                             <div className='secondary-post-content'>
                                 <h4 className='secondary-post-title'>{thisArray[2].title.rendered.substring(0,40) + '...'}</h4>
                                 <p className='secondary-post-text'>{thisArray[2].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,297) + '...'}</p>
