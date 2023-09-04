@@ -12,7 +12,7 @@ import NewsletterBottom from "../components/home/NewsletterBottom"
 import Footer from "../components/Footer"
 
 
-const Home = () => {
+const Home = ({thisArray}) => {
 
     const meta = {
         title: 'Clínica Flora Santos | Acupuntura em Santos',
@@ -35,7 +35,7 @@ const Home = () => {
             <Doutor/>
             <Atendimentos/>
             <Mapa/>
-            <Blog/>
+            <Blog thisArray={thisArray}/>
             <NewsletterBottom/>
             <Footer/>
         </DocumentMeta>

@@ -24,3 +24,10 @@
     gap: 26px;
     padding-bottom: 40px;
 }
+
+.div-content-newsletter-bottom-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

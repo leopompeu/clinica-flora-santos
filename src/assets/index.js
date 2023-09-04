@@ -26,10 +26,12 @@ import eletroAcupunturaEmSantos from './eletro-acupuntura-em-santos.webp'
 import arrow from './arrow.svg'
 import arrowDown from './arrow-down.svg'
 import terapiaEmSantosArte from './terapia-em-santos-arte.webp'
-import imagemAcupunturaServico from './imagem-acupuntura-servico.webp'
 import doutorFoto from './doutor-foto2.webp'
 import clinicaAcupunturaFloraSantosFoto from './clinica-acupuntura-flora-santos-foto.webp'
 import doutorFotoMobile from './doutor-foto-mobile.webp'
+import imagePostPrincipal from './image-post-principal.webp'
+import imagePosts from './image-posts.webp'
+import imagePosts2 from './image-posts2.webp'
 
 export {
     clinicaFloraSantosAcupuntura,
@@ -60,8 +62,10 @@ export {
     eletroAcupunturaEmSantos,
     arrowDown,
     terapiaEmSantosArte,
-    imagemAcupunturaServico,
     doutorFoto,
     clinicaAcupunturaFloraSantosFoto,
-    doutorFotoMobile
+    doutorFotoMobile,
+    imagePostPrincipal,
+    imagePosts,
+    imagePosts2
 }

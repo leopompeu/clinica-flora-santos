@@ -5,39 +5,14 @@ import { useNavigate } from 'react-router-dom'
 import FAQ from './FAQ'
 import Carousel from 'nuka-carousel'
 
-const Blog = () => {
+const Blog = ({thisArray}) => {
 
-    const [loading, setLoading] = useState(true)
-    const [array, setArray] = useState()
     const [author, setAuthor] = useState('Marcelo Paes e Alcantara')
-    const [time, setTime] = useState('10 min de leitura')
+    const [time, setTime2] = useState('10 min de leitura')
     const [image, setImage] = useState('https://cdn.discordapp.com/attachments/1021484845152608278/1131252315668631552/Frame_30.png')
     const [image2, setImage2] = useState('https://cdn.discordapp.com/attachments/1021484845152608278/1131252315668631552/Frame_30.png')
     const [image3, setImage3] = useState('https://cdn.discordapp.com/attachments/1021484845152608278/1131252315668631552/Frame_30.png')
 
-    let navigate = useNavigate(); 
-    
-    
-    const getJson = async () => {
-        try {
-          const response = await fetch('https://construtorafortcon.com.br/wp-json/wp/v2/posts')
-          .then(response => response.json())
-          .then(posts => setArray(posts));
-          setLoading(false);
-        } catch (error) {
-          console.error(error);
-          setLoading(false);
-        }
-    };
-
-
-
-    useEffect(() => {
-        getJson();
-    }, []);
-
-
-    if(!loading){
 
         function setTime(time) {
             var year = time.substring(0,4)
@@ -121,32 +96,32 @@ const Blog = () => {
                             
                             </div>
                     )}>
-                        <div className='item-div-blog-mobile' onClick={()=>window.open(array[0].link)}>
+                        <div className='item-div-blog-mobile' onClick={()=>window.open(window.location.href + 'Blog/posts/' + thisArray[0].title.rendered.replace(/[^\w\s]/gi, '').replace(/ /g, "-").replace(",", ""), "_self")}>
                             <img src={image} className='image-blog-mobile' alt='Imagem de capa do artigo em evidência sobre a Acupuntura e afins'/>
-                            <h4 className='title-post-mobile'>{array[0].title.rendered}</h4>
-                            <p className='text-post-mobile'>{array[0].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,247) + '...'}</p>
+                            <h4 className='title-post-mobile'>{thisArray[0].title.rendered}</h4>
+                            <p className='text-post-mobile'>{thisArray[0].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,247) + '...'}</p>
                             <div className='info-post-mobile'>
-                                <p className='info-text-mobile'>{setTime(array[0].date)}</p>
+                                <p className='info-text-mobile'>{setTime(thisArray[0].date)}</p>
                                 <p className='info-text-mobile'>{"| " + author + " |"}</p>
                                 <p className='info-text-bold-mobile'>{time}</p>
                             </div>  
                         </div>
-                        <div className='item-div-blog-mobile' onClick={()=>window.open(array[1].link)}>
+                        <div className='item-div-blog-mobile' onClick={()=>window.open(window.location.href + 'Blog/posts/' + thisArray[1].title.rendered.replace(/[^\w\s]/gi, '').replace(/ /g, "-").replace(",", ""), "_self")}>
                             <img src={image} className='image-blog-mobile' alt='Imagem de capa do artigo em evidência sobre a Acupuntura e afins'/>
-                            <h4 className='title-post-mobile'>{array[1].title.rendered}</h4>
-                            <p className='text-post-mobile'>{array[1].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,247) + '...'}</p>
+                            <h4 className='title-post-mobile'>{thisArray[1].title.rendered}</h4>
+                            <p className='text-post-mobile'>{thisArray[1].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,247) + '...'}</p>
                             <div className='info-post-mobile'>
-                                <p className='info-text-mobile'>{setTime(array[1].date)}</p>
+                                <p className='info-text-mobile'>{setTime(thisArray[1].date)}</p>
                                 <p className='info-text-mobile'>{"| " + author + " |"}</p>
                                 <p className='info-text-bold-mobile'>{time}</p>
                             </div>  
                         </div>
-                        <div className='item-div-blog-mobile' onClick={()=>window.open(array[2].link)}>
+                        <div className='item-div-blog-mobile' onClick={()=>window.open(window.location.href + 'Blog/posts/' + thisArray[2].title.rendered.replace(/[^\w\s]/gi, '').replace(/ /g, "-").replace(",", ""), "_self")}>
                             <img src={image} className='image-blog-mobile' alt='Imagem de capa do artigo em evidência sobre a Acupuntura e afins'/>
-                            <h4 className='title-post-mobile'>{array[2].title.rendered}</h4>
-                            <p className='text-post-mobile'>{array[2].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,247) + '...'}</p>
+                            <h4 className='title-post-mobile'>{thisArray[2].title.rendered}</h4>
+                            <p className='text-post-mobile'>{thisArray[2].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,247) + '...'}</p>
                             <div className='info-post-mobile'>
-                                <p className='info-text-mobile'>{setTime(array[2].date)}</p>
+                                <p className='info-text-mobile'>{setTime(thisArray[2].date)}</p>
                                 <p className='info-text-mobile'>{"| " + author + " |"}</p>
                                 <p className='info-text-bold-mobile'>{time}</p>
                             </div>  
@@ -162,12 +137,12 @@ const Blog = () => {
                 <h2 className='title-section-blog'>Blog</h2>
                 <h3 className='text-section-blog'>Fique por dentro dos nossos artigos!</h3>
                 <div className='blog-posts'>
-                    <div className='blog-principal' onClick={()=>window.open(array[0].link)}>
+                    <div className='blog-principal' onClick={()=>window.open(window.location.href + 'Blog/posts/' + thisArray[0].title.rendered.replace(/[^\w\s]/gi, '').replace(/ /g, "-").replace(",", ""), "_self")}>
                         <div className='text-blog-principal'>
-                            <h4 className='title-post-principal'>{array[0].title.rendered}</h4>
-                            <p className='text-post-principal'>{array[0].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,247) + '...'}</p>
+                            <h4 className='title-post-principal'>{thisArray[0].title.rendered.substring(0,40) + '...'}</h4>
+                            <p className='text-post-principal'>{thisArray[0].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,247) + '...'}</p>
                             <div className='info-post'>
-                                <p className='info-text'>{setTime(array[0].date)}</p>
+                                <p className='info-text'>{setTime(thisArray[0].date)}</p>
                                 <p className='info-text'>{author}</p>
                                 <p className='info-text-bold'>{time}</p>
                             </div>
@@ -175,25 +150,25 @@ const Blog = () => {
                         <img src={image} className='image-blog' alt='Imagem de capa do artigo em evidência sobre a Acupuntura e afins'/>
                     </div>
                     <div className='secondary-posts'>
-                        <div className='secondary-post' onClick={()=>window.open(array[1].link)}>
+                        <div className='secondary-post' onClick={()=>window.open(window.location.href + 'Blog/posts/' + thisArray[1].title.rendered.replace(/[^\w\s]/gi, '').replace(/ /g, "-").replace(",", ""), "_self")}>
                             <img src={image2} className='image-secondary-post' alt='Imagem de capa do artigo secundario sobre a Acupuntura e afins'/>
                             <div className='secondary-post-content'>
-                                <h4 className='secondary-post-title'>{array[1].title.rendered}</h4>
-                                <p className='secondary-post-text'>{array[1].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,297) + '...'}</p>
+                                <h4 className='secondary-post-title'>{thisArray[1].title.rendered.substring(0,40) + '...'}</h4>
+                                <p className='secondary-post-text'>{thisArray[1].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,297) + '...'}</p>
                                 <div className='info-post secondary'>
-                                    <p className='info-text'>{setTime(array[1].date)}</p>
+                                    <p className='info-text'>{setTime(thisArray[1].date)}</p>
                                     <p className='info-text'>{author}</p>
                                     <p className='info-text-bold'>{time}</p>
                                 </div>
                             </div>
                         </div>
-                        <div className='secondary-post' onClick={()=>window.open(array[2].link)}>
+                        <div className='secondary-post' onClick={()=>window.open(window.location.href + 'Blog/posts/' + thisArray[2].title.rendered.replace(/[^\w\s]/gi, '').replace(/ /g, "-").replace(",", ""), "_self")}>
                             <img src={image2} className='image-secondary-post' alt='Imagem de capa do artigo secundario sobre a Acupuntura e afins'/>
                             <div className='secondary-post-content'>
-                                <h4 className='secondary-post-title'>{array[2].title.rendered}</h4>
-                                <p className='secondary-post-text'>{array[2].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,297) + '...'}</p>
+                                <h4 className='secondary-post-title'>{thisArray[2].title.rendered.substring(0,40) + '...'}</h4>
+                                <p className='secondary-post-text'>{thisArray[2].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,297) + '...'}</p>
                                 <div className='info-post secondary'>
-                                    <p className='info-text'>{setTime(array[2].date)}</p>
+                                    <p className='info-text'>{setTime(thisArray[2].date)}</p>
                                     <p className='info-text'>{author}</p>
                                     <p className='info-text-bold'>{time}</p>
                                 </div>
@@ -205,15 +180,8 @@ const Blog = () => {
     )
   }
 
-} else {
-    return (
 
-        <div className="loading-container">
-            <div className="spinner"></div>
-        </div>
-    )
-}
-  
+
 }
 
 export default Blog

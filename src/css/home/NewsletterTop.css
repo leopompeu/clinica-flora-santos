@@ -3,11 +3,10 @@
 .section-newsletter-top{
     background: var(--yellow-300, #F2ECA5);
     display: flex;
-    width: 100vw;
+
     padding: 20px 0px;
-    justify-content: center;
     align-items: center;
-    gap: 42px;
+    justify-content: center;
 }
 
 .newsletter-title{
@@ -22,6 +21,7 @@
 }
 
 .input-newsletter{
+    margin-left: 42px;
     display: flex;
     width: 150px;
     padding: 12px 24px;
@@ -43,7 +43,6 @@
     line-height: 150%; /* 21px */
     letter-spacing: -0.14px;
     text-align: center;
-
 }
 
 .input-newsletter::placeholder{
@@ -88,6 +87,12 @@
 .form{
     display: flex;
     gap: 42px;
+}
+
+.div-content-newletter-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* MOBILE */

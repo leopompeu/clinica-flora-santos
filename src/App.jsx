@@ -20,7 +20,7 @@ const App = () => {
 
   const getJson = async () => {
     try {
-      const response = await fetch('https://construtorafortcon.com.br/wp-json/wp/v2/posts')
+      const response = await fetch('https://blog.clinicaflorasantos.com.br/wp-json/wp/v2/posts')
       .then(response => response.json())
       .then(posts => setArray(posts));
       setLoading(false);
@@ -32,55 +32,51 @@ const App = () => {
 
   useEffect(() => {
     getJson(array);
-  }, []);
-
-  
+  }, []);  
 
   if(!loading){
     const routesArray = []
 
+    var tag = '';
+
     function setRouteArray(arr){
 
       for(let i = 0; i < Object.keys(arr).length; i++){
-        routesArray.push(arr[i].title.rendered.replace(/ /g, "-").replace(",", ""))
+        routesArray.push(arr[i].title.rendered.replace(/[^\w\s]/gi, '').replace(/ /g, "-").replace(",", ""))
       }
 
     }
 
     setRouteArray(array)
 
-    console.log(routesArray)
-
     return (
       <div>
         <AccessibilityBar/>
         <NavBar/>
         <Routes>
-          <Route path="/" element={<Home />}/>
+          <Route path="/" element={<Home thisArray={array}/>}/>
           <Route path="/Terapias" element={<Terapias />}/>
           <Route path="/Acupuntura-em-Santos" element={<Sobre />}/>
           <Route path="/Blog" element={<Blog />}/>
-          {
+          {/* {
             routesArray.map(cat => (
-              <Route key={cat} path={`/Blog/posts/${cat}`} element={<Post/>} />
+              <Route key={cat} path={`/Blog/posts/${cat}`} element={<Post thisArray={array}/>} />
             ))
-          }
+          } */}
         </Routes>
         <a id="robbu-whatsapp-button" target="_blank" href="https://wa.me/5513996518092/?text=Ol%C3%A1,%20estou%20interessado%20em%20fazer%20uma%20sess%C3%A3o!">
           <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg"/>
         </a>
 
-      </div>
-
-      
+      </div>      
     )
-  } else {
-    return (
 
-      <div className="loading-container">
-          <div className="spinner"></div>
-      </div>
-  )
+  } else {
+      return (
+        <div className="loading-container">
+            <div className="spinner"></div>
+        </div>
+    )
   }
 }
 
