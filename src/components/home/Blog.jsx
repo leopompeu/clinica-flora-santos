@@ -97,7 +97,7 @@ const Blog = ({thisArray}) => {
                             
                             </div>
                     )}>
-                        <div className='item-div-blog-mobile' onClick={()=>window.open(window.location.href + 'Blog/posts/' + thisArray[0].title.rendered.replace(/[^\w\s]/gi, '').replace(/ /g, "-").replace(",", ""), "_self")}>
+                        <div className='item-div-blog-mobile' onClick={() => {window.open(thisArray[0].link),"_self"}}>
                             <img src={image} className='image-blog-mobile' alt='Imagem de capa do artigo em evidência sobre a Acupuntura e afins'/>
                             <h4 className='title-post-mobile'>{thisArray[0].title.rendered}</h4>
                             <p className='text-post-mobile'>{thisArray[0].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,247) + '...'}</p>
@@ -107,7 +107,7 @@ const Blog = ({thisArray}) => {
                                 <p className='info-text-bold-mobile'>{time}</p>
                             </div>  
                         </div>
-                        <div className='item-div-blog-mobile' onClick={()=>window.open(window.location.href + 'Blog/posts/' + thisArray[1].title.rendered.replace(/[^\w\s]/gi, '').replace(/ /g, "-").replace(",", ""), "_self")}>
+                        <div className='item-div-blog-mobile' onClick={() => {window.open(thisArray[0].link),"_self"}}>
                             <img src={image} className='image-blog-mobile' alt='Imagem de capa do artigo em evidência sobre a Acupuntura e afins'/>
                             <h4 className='title-post-mobile'>{thisArray[1].title.rendered}</h4>
                             <p className='text-post-mobile'>{thisArray[1].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,247) + '...'}</p>
@@ -117,7 +117,7 @@ const Blog = ({thisArray}) => {
                                 <p className='info-text-bold-mobile'>{time}</p>
                             </div>  
                         </div>
-                        <div className='item-div-blog-mobile' onClick={()=>window.open(window.location.href + 'Blog/posts/' + thisArray[2].title.rendered.replace(/[^\w\s]/gi, '').replace(/ /g, "-").replace(",", ""), "_self")}>
+                        <div className='item-div-blog-mobile' onClick={() => {window.open(thisArray[0].link),"_self"}}>
                             <img src={image} className='image-blog-mobile' alt='Imagem de capa do artigo em evidência sobre a Acupuntura e afins'/>
                             <h4 className='title-post-mobile'>{thisArray[2].title.rendered}</h4>
                             <p className='text-post-mobile'>{thisArray[2].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,247) + '...'}</p>
@@ -138,7 +138,7 @@ const Blog = ({thisArray}) => {
                 <h2 className='title-section-blog'>Blog</h2>
                 <h3 className='text-section-blog'>Fique por dentro dos nossos artigos!</h3>
                 <div className='blog-posts'>
-                    <div className='blog-principal' onClick={()=>window.open(window.location.href + 'Blog/posts/' + thisArray[0].title.rendered.replace(/[^\w\s]/gi, '').replace(/ /g, "-").replace(",", ""), "_self")}>
+                    <div className='blog-principal' onClick={() => {window.open(thisArray[0].link),"_self"}}>
                         <div className='text-blog-principal'>
                             <h4 className='title-post-principal'>{thisArray[0].title.rendered.substring(0,40) + '...'}</h4>
                             <p className='text-post-principal'>{thisArray[0].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,247) + '...'}</p>
@@ -151,7 +151,7 @@ const Blog = ({thisArray}) => {
                         <img src={imagePostPrincipal} className='image-blog' alt='Imagem de capa do artigo em evidência sobre a Acupuntura e afins'/>
                     </div>
                     <div className='secondary-posts'>
-                        <div className='secondary-post' onClick={()=>window.open(window.location.href + 'Blog/posts/' + thisArray[1].title.rendered.replace(/[^\w\s]/gi, '').replace(/ /g, "-").replace(",", ""), "_self")}>
+                        <div className='secondary-post' onClick={() => {window.open(thisArray[0].link),"_self"}}>
                             <img src={imagePosts} className='image-secondary-post' alt='Imagem de capa do artigo secundario sobre a Acupuntura e afins'/>
                             <div className='secondary-post-content'>
                                 <h4 className='secondary-post-title'>{thisArray[1].title.rendered.substring(0,40) + '...'}</h4>
@@ -163,7 +163,7 @@ const Blog = ({thisArray}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='secondary-post' onClick={()=>window.open(window.location.href + 'Blog/posts/' + thisArray[2].title.rendered.replace(/[^\w\s]/gi, '').replace(/ /g, "-").replace(",", ""), "_self")}>
+                        <div className='secondary-post' onClick={() => {window.open(thisArray[0].link),"_self"}}>
                             <img src={imagePosts2} className='image-secondary-post' alt='Imagem de capa do artigo secundario sobre a Acupuntura e afins'/>
                             <div className='secondary-post-content'>
                                 <h4 className='secondary-post-title'>{thisArray[2].title.rendered.substring(0,40) + '...'}</h4>

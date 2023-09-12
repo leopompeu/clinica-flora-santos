@@ -10,9 +10,9 @@ const Historia = () => {
                 <img src={clinicaAcupunturaFloraSantosFoto} className='flora-santos-foto-sobre-mobile' alt='Imagens da clinica de acupuntura em Santos, a Clinica Flora Santos'/>
                 <div className='div-title-historia-sobre-mobile'>
                     <img src={iconAcupuntura}/>
-                    <h2 className='title-historia-sobre-mobile'>Lorem ipsum dolor sit</h2>
+                    <h2 className='title-historia-sobre-mobile'>Conheça a nossa clínica.</h2>
                 </div>
-                <p className='text-historia-sobre-mobile'>Lorem ipsum dolor sit amet consectetur. Sapien nunc ac rutrum amet blandit. Massa magna malesuada nunc urna vel cursus tincidunt. Egestas dictum vitae viverra donec sollicitudin elementum. Enim morbi nunc sit auctor et dis diam scelerisque. Amet malesuada a vitae.</p>
+                <p className='text-historia-sobre-mobile'>Localizada no Boqueirão de Santos, na Rua Goias n. 84, nossa clínica proporciona serenidade e paz para seus momentos de terapia e reconstituição do seu equilíbrio.</p>
             </section>
         )
 
@@ -23,9 +23,9 @@ const Historia = () => {
                 <div className='content-hisotira-sobre'>
                     <div className='div-title-historia-sobre'>
                         <img src={iconAcupuntura}/>
-                        <h2 className='title-historia-sobre'>Lorem ipsum dolor sit</h2>
+                        <h2 className='title-historia-sobre'>Conheça a nossa clínica.</h2>
                     </div>
-                    <p className='text-historia-sobre'>Lorem ipsum dolor sit amet consectetur. Sapien nunc ac rutrum amet blandit. Massa magna malesuada nunc urna vel cursus tincidunt. Egestas dictum vitae viverra donec sollicitudin elementum. Enim morbi nunc sit auctor et dis diam scelerisque. Amet malesuada a vitae.</p>
+                    <p className='text-historia-sobre'>Localizada no Boqueirão de Santos, na Rua Goias n. 84, nossa clínica proporciona serenidade e paz para seus momentos de terapia e reconstituição do seu equilíbrio.</p>
                 </div>
             </section>
           )
