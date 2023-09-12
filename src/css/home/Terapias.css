@@ -219,6 +219,11 @@
     transform: scale(1.25);
 }
 
+.image-terapias-home{
+    height: 446px;
+    width: 446px;
+}
+
 /* MOBILE */
 
 .section-terapias-mobile{

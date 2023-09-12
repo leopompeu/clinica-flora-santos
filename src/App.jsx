@@ -18,6 +18,15 @@ const App = () => {
   const [loading, setLoading] = useState(true)
   const [array, setArray] = useState()
 
+  const TerserPlugin = require('terser-webpack-plugin');
+
+module.exports = {
+  mode: 'production',
+  optimization: {
+    minimizer: [new TerserPlugin({ /* opções adicionais aqui */ })],
+  },
+};
+
   const getJson = async () => {
     try {
       const response = await fetch('https://blog.clinicaflorasantos.com.br/wp-json/wp/v2/posts')
@@ -29,6 +38,7 @@ const App = () => {
       setLoading(false);
     }
   };
+
 
   useEffect(() => {
     getJson(array);

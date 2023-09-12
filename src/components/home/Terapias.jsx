@@ -148,7 +148,7 @@ const Terapias = () => {
                                 <p className='text-item'>A acupuntura é uma terapia que utiliza agulhas finas em pontos específicos do corpo para aliviar dores, tratar doenças e promover bem-estar. A acupuntura é eficaz no tratamento de uma variedade de condições, incluindo dores musculares, dores nas costas, enxaquecas e artrite. Também é utilizada para tratar alergias, ansiedade e insônia.</p>
                                 <button className='button-terapia-item' name='Botão para saber mais sobre a Acupuntura' onClick={() => {navigate("/Terapias")}}>Saiba mais</button>
                             </div>
-                            <img src={imageAcupuntura} style={{marginLeft: 150}} alt='Foto de um sessão de acupuntura'/>
+                            <img src={imageAcupuntura} className='image-terapias-home' style={{marginLeft: 150}} alt='Foto de um sessão de acupuntura'/>
                         </div>
                     </div>
                     <div className='carrossel-item'>

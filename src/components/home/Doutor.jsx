@@ -30,7 +30,7 @@ const Doutor = () => {
   } else {
     return (
         <section id="Doutor" className='section-doutor'>
-            <img alt='Foto de Marcelo Paes e Alcantara Médico acupunturista em Santos' src={doctorPlaceholder} className={window.innerWidth < 1400 ? 'doctor-small' : ''}/>
+            <img alt='Foto de Marcelo Paes e Alcantara Médico acupunturista em Santos' src={doctorPlaceholder} className={window.innerWidth < 1400 ? 'doctor-small' : 'doctor-img-home'}/>
             <div className='doctor-content'>
                 <h2 className='doctor-title'>Dr Marcelo Paes e Alcantara</h2>
                 <p className='text-doctor'>Dr. Marcelo é um renomado médico acupunturista em Santos, oferecendo tratamentos de alta qualidade. Sua expertise proporciona alívio de dores, bem-estar e equilíbrio para seus pacientes</p>
