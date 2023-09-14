@@ -1,18 +1,21 @@
 
 import DocumentMeta from "react-document-meta"
-import Div1 from "../components/home/Div1"
-import NewsletterTop from "../components/home/NewsletterTop"
-import Chamariz from "../components/home/Chamariz"
-import Terapias from "../components/home/Terapias"
-import Doutor from "../components/home/Doutor"
-import Atendimentos from "../components/home/Atendimentos"
-import Mapa from "../components/home/Mapa"
-import Blog from "../components/home/Blog"
-import NewsletterBottom from "../components/home/NewsletterBottom"
-import Footer from "../components/Footer"
-
+import { lazy, Suspense } from "react"
+import { withStyles } from "react-critical-css";
+import style from "../css/home/export.css?inline";
 
 const Home = ({thisArray}) => {
+
+    const Div1 = lazy(() => import ('../components/home/Div1'));
+    const Terapias = lazy(() => import ('../components/home/Terapias'));
+    const NewsletterTop = lazy(() => import ('../components/home/NewsletterTop'));
+    const Chamariz = lazy(() => import ('../components/home/Chamariz'));
+    const Blog = lazy(() => import ('../components/home/Blog'));
+    const Doutor = lazy(() => import ('../components/home/Doutor'));
+    const Atendimentos = lazy(() => import ('../components/home/Atendimentos'));
+    const Mapa = lazy(() => import ('../components/home/Mapa'));
+    const NewsletterBottom = lazy(() => import ('../components/home/NewsletterBottom'));
+    const Footer = lazy(() => import ('../components/Footer'));
 
     const meta = {
         title: 'Clínica Flora Santos | Acupuntura em Santos',
@@ -27,19 +30,27 @@ const Home = ({thisArray}) => {
     }
     
     return (
-        <DocumentMeta {...meta}>
-            <Div1/>
-            <NewsletterTop/>
-            <Chamariz/>
-            <Terapias/>
-            <Doutor/>
-            <Atendimentos/>
-            <Mapa/>
-            <Blog thisArray={thisArray}/>
-            <NewsletterBottom/>
-            <Footer/>
-        </DocumentMeta>
-      )
+        withStyles(style)(
+            <DocumentMeta {...meta}>
+                <Div1/>
+                <NewsletterTop/>
+                <Chamariz/>
+                <Suspense fallback={
+                    <div className="loading-container">
+                        <div className="spinner"></div>
+                    </div>
+                }>
+                    <Terapias/>
+                    <Doutor/>
+                    <Atendimentos/>
+                    <Mapa/>
+                    <Blog thisArray={thisArray}/>
+                    <NewsletterBottom/>
+                    <Footer/>
+                </Suspense>
+            </DocumentMeta>
+        )
+    )
     
 }
 

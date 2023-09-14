@@ -1,11 +1,13 @@
 import React from 'react'
 import DocumentMeta from 'react-document-meta'
-import Div1 from '../components/terapias/Div1'
-import Servicos from '../components/terapias/Servicos'
-import Footer from "../components/Footer"
-
+import { lazy } from 'react'
+import { withStyles } from "react-critical-css";
 
 const Terapias = () => {
+
+    const Div1 = lazy(() => import ('../components/terapias/Div1'));
+    const Servicos = lazy(() => import ('../components/terapias/Servicos'));
+    const Footer = lazy(() => import ('../components/Footer'));
 
     const meta = {
         title: 'Terapias | Clínica Flora Santos | Acupuntura em Santos',
@@ -20,11 +22,14 @@ const Terapias = () => {
     }
 
   return (
-    <DocumentMeta {...meta}>
-        <Div1/>
-        <Servicos/>
-        <Footer/>
-    </DocumentMeta>
+    withStyles(style)(
+        <DocumentMeta {...meta}>
+            <Div1/>
+            <Servicos/>
+            <Footer/>
+        </DocumentMeta>
+    )
+
   )
 }
 

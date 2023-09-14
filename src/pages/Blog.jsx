@@ -1,31 +1,14 @@
 import React from 'react'
-import PostPrincipal from '../components/blog/PostPrincipal'
 import DocumentMeta from 'react-document-meta'
-import { useState } from 'react'
-import { useEffect } from 'react'
-import CarouselPosts from '../components/blog/CarouselPosts'
-import Footer from '../components/Footer'
+import { useState, useEffect, lazy } from 'react'
+import { withStyles } from "react-critical-css";
+import style from "../css/blog/export.css";
 
-const Blog = () => {
+const Blog = ( {thisArray} ) => {
 
-    const [loading, setLoading] = useState(true)
-    const [array, setArray] = useState()
-  
-    const getJson = async () => {
-      try {
-        const response = await fetch('https://blog.clinicaflorasantos.com.br/wp-json/wp/v2/posts')
-        .then(response => response.json())
-        .then(posts => setArray(posts));
-        setLoading(false);
-      } catch (error) {
-        console.error(error);
-        setLoading(false);
-      }
-    };
-  
-    useEffect(() => {
-      getJson(array);
-    }, []);
+    const PostPrincipal = lazy(() => import ('../components/blog/PostPrincipal'));
+    const CarouselPosts = lazy(() => import ('../components/blog/CarouselPosts'));
+    const Footer = lazy(() => import ('../components/Footer'));
 
     const meta = {
         title: 'Blog | Clínica Flora Santos | Acupuntura em Santos',
@@ -39,24 +22,19 @@ const Blog = () => {
         }
     }
     
-
-    if(!loading) {
-        return (
+    
+    return (
+        withStyles(style)(
             <div className='blog-page'>
                 <DocumentMeta {...meta}>
-                    <PostPrincipal thisArray={array}/>
-                    <CarouselPosts thisArray={array}/>
+                    <PostPrincipal thisArray={thisArray}/>
+                    <CarouselPosts thisArray={thisArray}/>
                     <Footer/>
                 </DocumentMeta>
             </div>
         )
-    } else {
-        return (
-            <div className="loading-container">
-                <div className="spinner"></div>
-            </div>
-        )
-    }
+
+    )
 
 }
 

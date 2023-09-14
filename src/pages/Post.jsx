@@ -1,25 +1,21 @@
 import React from 'react'
 
-const Post = ({thisArray}) => {
+const Post = ({thisArray, thisTag}) => {
 
-    const [loading, setLoading] = useState(true)
-    const [array, setArray] = useState()
-  
-    const getJson = async () => {
-      try {
-        const response = await fetch('https://blog.clinicaflorasantos.com.br/wp-json/wp/v2/posts')
-        .then(response => response.json())
-        .then(posts => setArray(posts));
-        setLoading(false);
-      } catch (error) {
-        console.error(error);
-        setLoading(false);
-      }
-    };
-  
-    useEffect(() => {
-      getJson(array);
-    }, []);
+  // var data = [];
+
+  // function getData(array, tag){
+  //   for(let i = 0; i < Object.keys(arr).length; i++){
+  //     if(array[i].title.rendered.replace(/[^\w\s]/gi, '').replace(/ /g, "-").replace(",", "") == tag){
+  //       console.log(array[i].title.rendered + 'boa')
+  //     } else {
+  //       console.log(array[i].title.rendered + 'bad')
+  //     }
+  //   }
+  // }
+
+  // getData(thisArray, thisTag)
+
   return (
     <div>
         <h1>Assassinato</h1>
