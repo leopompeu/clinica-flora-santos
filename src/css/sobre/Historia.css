@@ -41,7 +41,7 @@
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%; /* 24px */
     letter-spacing: -0.16px;
 
@@ -55,6 +55,11 @@
 .flora-santos-foto-sobre{
     width: 510px;
     height: 680px
+}
+
+.icon-historia-page-sobre{
+    width: 24px;
+    height: 25px;
 }
 
 /* MOBILE */
@@ -103,6 +108,21 @@
     font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%; /* 18px */
 }
+
+.slideshow {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 500px;
+  }
+  .slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1000ms;
+  }
+  .slide {
+    display: inline-block;
+    width: 510px;
+    height: 680px;
+  }

@@ -5,8 +5,8 @@
     background-image: url(../../assets/art-doutor-acupuntura.webp);
     background-repeat: no-repeat;
     background-position-y: 100%;
-    background-size: 17.5%;
-    background-position-x: 82.5vw ;
+    background-size: 12.5%;
+    background-position-x: 87.5vw ;
     display: flex;
     height: 100%;
     justify-content: start;
@@ -52,7 +52,7 @@
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%; /* 24px */
     letter-spacing: -0.16px;
 
@@ -80,7 +80,7 @@
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%; /* 24px */
     letter-spacing: -0.16px;
 }
@@ -129,7 +129,7 @@
     font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%; /* 18px */
 }
 
@@ -140,6 +140,6 @@
     font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%; /* 18px */
 }

@@ -24,12 +24,12 @@
 .title-servicos-terapias{
     margin-top: 10%;
     margin-bottom: -2%;
-    color: var(--yellow-500, #B7B16C);
+    color: var(--yellow-500, #7B763D);
     /* Body/XL */
     font-family: Montserrat;
     font-size: 22px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 160%; /* 35.2px */
     letter-spacing: -0.22px;
 }
@@ -75,7 +75,7 @@
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%; /* 24px */
     letter-spacing: -0.16px;
 
@@ -145,7 +145,7 @@
 }
 
 .title-servicos-terapias-mobile{
-    color: var(--yellow-500, #B7B16C);
+    color: var(--yellow-500, #7B763D);
     text-align: center;
 
     /* Bold/XS */
@@ -218,7 +218,7 @@
     font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%; /* 18px */
 
     text-align: justify;

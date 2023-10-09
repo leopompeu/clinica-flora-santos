@@ -10,12 +10,12 @@ const Footer = () => {
     return (
       <section id="Footer" className='section-footer-mobile'>
       <Link smooth to='#'>
-          <img src={acupunturaFloraSantos} alt='Acupuntura em Santos é na Flora Santos!' className='logo-footer-mobile'/>
+          <img loading='lazy' src={acupunturaFloraSantos} alt='Acupuntura em Santos é na Flora Santos!' className='logo-footer-mobile'/>
       </Link>
-      <img className='line-mobile'/>
+      <img loading='lazy' alt='Linha que separa a logo da Clinica Flora Santos, clinica de acupuntura para as redes sociais da clínica' className='line-mobile'/>
       <div className='social-media'>
-          <img src={instagramIcon} alt='Botão ícone para o instagram da clínica de acupuntura em santos, Flora Santos' onClick={()=>window.open('https://www.instagram.com/clinicaflorasantos/', '_blank')} className='social-media-icon'/>
-          <img src={whatsappIcon} alt='Botão ícone para o whatsapp da clínica de acupuntura em santos, Flora Santos' onClick={()=>window.open('')} className='social-media-icon'/>
+          <img src={instagramIcon} loading='lazy' alt='Botão ícone para o instagram da clínica de acupuntura em santos, Flora Santos' onClick={()=>window.open('https://www.instagram.com/clinicaflorasantos/', '_blank')} className='social-media-icon'/>
+          <img src={whatsappIcon} loading='lazy' alt='Botão ícone para o whatsapp da clínica de acupuntura em santos, Flora Santos' onClick={()=>window.open('https://wa.me/5513996518092/?text=Ol%C3%A1,%20estou%20interessado%20em%20fazer%20uma%20sess%C3%A3o!')} className='social-media-icon'/>
       </div>
       <a href='https://litteratech.com.br/' target='_blank' className='littera'>Feito com 💜 por Littera</a>
     </section>
@@ -24,12 +24,12 @@ const Footer = () => {
     return (
         <section id="Footer" className='section-footer'>
             <Link smooth to='#'>
-                <img src={acupunturaFloraSantos} alt='Acupuntura em Santos é na Flora Santos!' className='logo-footer'/>
+                <img src={acupunturaFloraSantos} loading='lazy' alt='Acupuntura em Santos é na Flora Santos!' className='logo-footer'/>
             </Link>
-            <img className='line'/>
+            <img loading='lazy' alt='Linha que separa a logo da Clinica Flora Santos, clinica de acupuntura para as redes sociais da clínica' className='line'/>
             <div className='social-media'>
-                <img src={instagramIcon} alt='Botão ícone para o instagram da clínica de acupuntura em santos, Flora Santos' onClick={()=>window.open('https://www.instagram.com/clinicaflorasantos/', '_blank')} className='social-media-icon'/>
-                <img src={whatsappIcon} alt='Botão ícone para o whatsapp da clínica de acupuntura em santos, Flora Santos' onClick={()=>window.open('')} className='social-media-icon'/>
+                <img src={instagramIcon} loading='lazy' alt='Botão ícone para o instagram da clínica de acupuntura em santos, Flora Santos' onClick={()=>window.open('https://www.instagram.com/clinicaflorasantos/', '_blank')} className='social-media-icon'/>
+                <img src={whatsappIcon} loading='lazy' alt='Botão ícone para o whatsapp da clínica de acupuntura em santos, Flora Santos' onClick={()=>window.open('https://wa.me/5513996518092/?text=Ol%C3%A1,%20estou%20interessado%20em%20fazer%20uma%20sess%C3%A3o!')} className='social-media-icon'/>
             </div>
             <a href='https://litteratech.com.br/' target='_blank' className='littera'>Feito com 💜 por Littera</a>
         </section>

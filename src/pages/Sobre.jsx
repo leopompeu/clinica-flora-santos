@@ -16,7 +16,7 @@ const Sobre = () => {
   const meta = {
     title: 'Sobre a Clínica Flora Santos | Acupuntura em Santos',
     description: 'Acupuntura em Santos é na Clinica Flora Santos. Para dores crônicas e agudas, insônia e afins. Transforme sua saúde e agende já sua consulta!',
-    canonical: 'https://clinicaflorasantos.com.br/',
+    canonical: 'https://clinicaflorasantos.com.br/Acupuntura-em-Santos',
     meta: {
         charset: 'utf-8',
         name: {

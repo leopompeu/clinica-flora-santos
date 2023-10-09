@@ -13,11 +13,12 @@ const Div1 = () => {
           <p className='subtitle-mobile'>Experimente a acupuntura na Clínica Flora Santos. Agende sua sessão agora mesmo e se livre das dores crônicas e agudas. Cuide do seu bem-estar!</p>
           <button className='button-agendar-div1-mobile' name='Botão para atendimento de acupuntura em Santos' onClick={() => {window.open('https://wa.me/5513996518092/?text=Ol%C3%A1,%20estou%20interessado%20em%20fazer%20uma%20sess%C3%A3o!', '_blank')}}>Agendar</button>
           <ReactPlayer
+                        rel="preconnect"
                         width="360px"
                         height="200px"
                         alt="Video sobre clínica de acupuntura em Santos, a Clínica Flora Santos"
                         url="https://www.youtube.com/embed/TY-iB9r-2Ns"
-                        playIcon={<img className='video-playbutton' alt="Botão de play para video da Clínica de acupuntura em Santos" src={playclinicadeacupunturaemsantos}></img>}
+                        playIcon={<img className='video-playbutton' alt="Botão de play para video da Clínica de acupuntura em Santos" loading='lazy' src={playclinicadeacupunturaemsantos}></img>}
                         light={acupunturaEmSantosVideo}
                         playing={true}
           /> 
@@ -34,12 +35,13 @@ const Div1 = () => {
             </div>
             <div>
                 <ReactPlayer
+                        rel="preconnect"
                         width="570px"
                         height="320px"
                         className='video'
                         alt="Video sobre clínica de acupuntura em Santos, a Clínica Flora Santos"
                         url="https://www.youtube.com/embed/TY-iB9r-2Ns"
-                        playIcon={<img className='video-playbutton' alt="Botão de play para video da Clínica de acupuntura em Santos" src={playclinicadeacupunturaemsantos}></img>}
+                        playIcon={<img className='video-playbutton' loading='lazy' alt="Botão de play para video da Clínica de acupuntura em Santos" src={playclinicadeacupunturaemsantos}></img>}
                         light={acupunturaEmSantosVideo}
                         playing={true}
                 /> 

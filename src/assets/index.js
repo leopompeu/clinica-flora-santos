@@ -32,6 +32,11 @@ import doutorFotoMobile from './doutor-foto-mobile.webp'
 import imagePostPrincipal from './image-post-principal.webp'
 import imagePosts from './image-posts.webp'
 import imagePosts2 from './image-posts2.webp'
+import imageSlide1 from './image-slide1.webp'
+import imageSlide2 from './image-slide2.webp'
+import imageSlide3 from './image-slide3.webp'
+import imageSlide4 from './image-slide4.webp'
+
 
 export {
     clinicaFloraSantosAcupuntura,
@@ -67,5 +72,9 @@ export {
     doutorFotoMobile,
     imagePostPrincipal,
     imagePosts,
-    imagePosts2
+    imagePosts2,
+    imageSlide1,
+    imageSlide2,
+    imageSlide3,
+    imageSlide4
 }

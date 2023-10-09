@@ -54,7 +54,7 @@ const PostPrincipal = ({thisArray}) => {
 
     if(isMobile){
         return(
-            <section className='section-post-principal-blog-mobile' id='Post principal' onClick={() => {window.open(thisArray[0].link),"_self"}}>
+            <section className='section-post-principal-blog-mobile' id='Post principal' onClick={() => {window.open("Blog/posts/" + thisArray[2].title.rendered.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(":", "").replace(/ /g, "-").replace(",", "")),"_self"}}>
                 <h1 className='title-post-principal-blog-mobile'>{thisArray[0].title.rendered}</h1>
                 <p className='text-post-principal-blog-mobile'>{thisArray[0].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,247) + '...'}</p>
                 <p><span className='info-post-principal-blog-mobile'>{setTime(thisArray[0].date)}</span><span className='bold-info-post-principal-blog-mobile'>&nbsp;&nbsp;•&nbsp;&nbsp;10 min de leitura</span></p>
@@ -62,7 +62,7 @@ const PostPrincipal = ({thisArray}) => {
         )
     } else {
         return (
-            <section className='section-post-principal-blog' id='Post principal' onClick={() => {window.open(thisArray[0].link),"_self"}}>
+            <section className='section-post-principal-blog' id='Post principal' onClick={() => {window.open("Blog/posts/" + thisArray[2].title.rendered.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(":", "").replace(/ /g, "-").replace(",", "")),"_self"}}>
                 <div className='content-post-principal-blog'>
                     <h1 className='title-post-principal-blog'>{thisArray[0].title.rendered}</h1>
                     <p className='text-post-principal-blog'>{thisArray[0].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,247) + '...'}</p>
@@ -71,7 +71,7 @@ const PostPrincipal = ({thisArray}) => {
                         <p className='bold-info-post-principal-blog'>•&nbsp;&nbsp;10 min de leitura</p>
                     </div>
                 </div>
-                <img className='image-post-principal-blog' src={imagePostPrincipal} alt='Imagem que representa o post sobre acupuntura e saúde.'/>
+                <img className='image-post-principal-blog' loading='lazy' src={imagePostPrincipal} alt='Imagem que representa o post sobre acupuntura e saúde.'/>
             </section>
           )
     }

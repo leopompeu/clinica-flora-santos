@@ -46,13 +46,13 @@ const CarouselPosts = ({thisArray}) => {
                             </div>
                     )}>
                         <div className='div-carousel-posts-blog-mobile' onClick={() => {window.open(thisArray[1].link),"_self"}}>
-                            <img src={imagePosts} className='image-post-mobile' alt='Imagem que representa o post do blog sobre saúde e acupuntura'/>
+                            <img src={imagePosts} loading='lazy' className='image-post-mobile' alt='Imagem que representa o post do blog sobre saúde e acupuntura'/>
                             <h4 className='title-post-item-mobile'>{thisArray[1].title.rendered.substring(0,37) + '...'}</h4>
                             <p className='text-post-item-mobile'>{thisArray[1].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,97) + '...'}</p>
                             <p className='div-info-post-item-mobile'><span className='info-post-item-mobile'>{setTime(thisArray[1].date) + ' • Marcelo Paes •\xa0'}</span><span className='bold-info-post-item-mobile'>10 min de Leitura</span></p>
                         </div>
                         <div className='div-carousel-posts-blog-mobile' onClick={() => {window.open(thisArray[2].link),"_self"}}>
-                            <img src={imagePosts2} className='image-post-mobile' alt='Imagem que representa o post do blog sobre saúde e acupuntura'/>
+                            <img src={imagePosts2} loading='lazy' className='image-post-mobile' alt='Imagem que representa o post do blog sobre saúde e acupuntura'/>
                             <h4 className='title-post-item-mobile'>{thisArray[2].title.rendered.substring(0,37) + '...'}</h4>
                             <p className='text-post-item-mobile'>{thisArray[2].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,97) + '...'}</p>
                             <p className='div-info-post-item-mobile'><span className='info-post-item-mobile'>{setTime(thisArray[2].date) + ' • Marcelo Paes •\xa0'}</span><span className='bold-info-post-item-mobile'>10 min de Leitura</span></p>
@@ -69,8 +69,8 @@ const CarouselPosts = ({thisArray}) => {
                     <h3 className='text-section-carousel-posts-blog'>Fique por dentro dos nossos artigos!</h3>
                 </div>
                 <div className='div-carousel-posts-blog'>
-                    <div className='div-post-container' onClick={() => {window.open(thisArray[1].link),"_self"}}>
-                        <img src={imagePosts} alt='Imagem que representa um post sobre acupuntura e saúde.' className='post-item-image'/>
+                    <div className='div-post-container' onClick={() => {window.open("Blog/posts/" + thisArray[1].title.rendered.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(":", "").replace(/ /g, "-").replace(",", "")),"_self"}}>
+                        <img src={imagePosts} loading='lazy' alt='Imagem que representa um post sobre acupuntura e saúde.' className='post-item-image'/>
                         <h4 className='title-post-item'>{thisArray[1].title.rendered.substring(0,37) + '...'}</h4>
                         <p className='text-post-item'>{thisArray[1].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,97) + '...'}</p>
                         <div className='div-info-post-item'>
@@ -78,8 +78,8 @@ const CarouselPosts = ({thisArray}) => {
                           <p className='bold-info-post-item'>10 min de Leitura</p>
                         </div>
                     </div>
-                    <div className='div-post-container' onClick={() => {window.open(thisArray[2].link),"_self"}}>
-                        <img src={imagePosts2} alt='Imagem que representa um post sobre acupuntura e saúde.' className='post-item-image'/>
+                    <div className='div-post-container' onClick={() => {window.open("Blog/posts/" + thisArray[2].title.rendered.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(":", "").replace(/ /g, "-").replace(",", "")),"_self"}}>
+                        <img src={imagePosts2} loading='lazy' alt='Imagem que representa um post sobre acupuntura e saúde.' className='post-item-image'/>
                         <h4 className='title-post-item'>{thisArray[2].title.rendered.substring(0,37) + '...'}</h4>
                         <p className='text-post-item'>{thisArray[2].content.rendered.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "").replace(/(<strong[^>]+?>|<strong>|<\/strong>)/img, "").substring(0,97) + '...'}</p>
                         <div className='div-info-post-item'>

@@ -12,9 +12,9 @@ const Servicos = () => {
                     <h3 className='subtitle-servicos-terapias-mobile'>Como podemos tratar sua dor?</h3>
                 </div>
                 <div className='servico-item-mobile'>
-                    <img src={imageAcupuntura} alt='Foto de uma sessão de acupuntura' className='image-servicos-terapias-mobile'/>
+                    <img src={imageAcupuntura} loading='lazy' alt='Foto de uma sessão de acupuntura' className='image-servicos-terapias-mobile'/>
                     <div className='div-title-servico-item-mobile'>
-                        <img alt='Icone Acupuntura' src={iconAcupuntura}/>
+                        <img alt='Icone Acupuntura' loading='lazy' src={iconAcupuntura}/>
                         <h3 className='title-servico-item-mobile'>Acupuntura</h3>
                     </div>
                     <p className='text-servico-item-mobile'>
@@ -25,9 +25,9 @@ const Servicos = () => {
                     <button className='button-servico-item' name='Botão para atendimento de acupuntura em Santos' onClick={() => {window.open('https://wa.me/5513996518092/?text=Ol%C3%A1,%20estou%20interessado%20em%20fazer%20uma%20sess%C3%A3o%20de%20acupuntura!', '_blank')}}>Agendar</button>
                 </div>
                 <div className='servico-item-mobile'>
-                    <img src={imagemVentosaterapia} alt='Foto de uma sessão de ventosa' className='image-servicos-terapias-mobile'/>
+                    <img src={imagemVentosaterapia} loading='lazy' alt='Foto de uma sessão de ventosa' className='image-servicos-terapias-mobile'/>
                     <div className='div-title-servico-item-mobile'>
-                        <img alt='Icone Acupuntura' src={iconVentosa}/>
+                        <img alt='Icone Acupuntura' loading='lazy' src={iconVentosa}/>
                         <h3 className='title-servico-item-mobile'>Ventosa</h3>
                     </div>
                     <p className='text-servico-item-mobile'>
@@ -38,9 +38,9 @@ const Servicos = () => {
                     <button className='button-servico-item' name='Botão para atendimento de ventosa em Santos' onClick={() => {window.open('https://wa.me/5513996518092/?text=Ol%C3%A1,%20estou%20interessado%20em%20fazer%20uma%20sess%C3%A3o%20de%20ventosa!', '_blank')}}>Agendar</button>
                 </div>
                 <div className='servico-item-mobile'>
-                    <img src={moxaEmSantos} alt='Foto de uma sessão de Môxa' className='image-servicos-terapias-mobile'/>
+                    <img src={moxaEmSantos} loading='lazy' alt='Foto de uma sessão de Môxa' className='image-servicos-terapias-mobile'/>
                     <div className='div-title-servico-item-mobile'>
-                        <img alt='Icone Acupuntura' src={iconAcupuntura}/>
+                        <img alt='Icone Acupuntura' loading='lazy' src={iconAcupuntura}/>
                         <h3 className='title-servico-item-mobile'>Môxa</h3>
                     </div>
                     <p className='text-servico-item-mobile'>
@@ -51,9 +51,9 @@ const Servicos = () => {
                     <button className='button-servico-item' name='Botão para atendimento de Môxa em Santos' onClick={() => {window.open('https://wa.me/5513996518092/?text=Ol%C3%A1,%20estou%20interessado%20em%20fazer%20uma%20sess%C3%A3o%20de%20M%C3%B4xa!', '_blank')}}>Agendar</button>
                 </div>
                 <div className='servico-item-mobile'>
-                    <img src={eletroAcupunturaEmSantos} alt='Foto de uma sessão de Eletroacupuntura' className='image-servicos-terapias-mobile'/>
+                    <img src={eletroAcupunturaEmSantos} loading='lazy' alt='Foto de uma sessão de Eletroacupuntura' className='image-servicos-terapias-mobile'/>
                     <div className='div-title-servico-item-mobile'>
-                        <img alt='Icone Acupuntura' src={iconVentosa}/>
+                        <img alt='Icone Acupuntura' loading='lazy' src={iconVentosa}/>
                         <h3 className='title-servico-item-mobile'>Eletroacupuntura</h3>
                     </div>
                     <p className='text-servico-item-mobile'>
@@ -64,9 +64,9 @@ const Servicos = () => {
                     <button className='button-servico-item' name='Botão para atendimento de Eletroacupuntura em Santos' onClick={() => {window.open('https://wa.me/5513996518092/?text=Ol%C3%A1,%20estou%20interessado%20em%20fazer%20umasess%C3%A3o%20de%20Eletroacupuntura!', '_blank')}}>Agendar</button>
                 </div>
                 <div className='servico-item-mobile'>
-                    <img src={namdaEmSantos} alt='Foto de uma sessão de Técnica de Torção Articular NamDã' className='image-servicos-terapias-mobile'/>
+                    <img src={namdaEmSantos} loading='lazy' alt='Foto de uma sessão de Técnica de Torção Articular NamDã' className='image-servicos-terapias-mobile'/>
                     <div className='div-title-servico-item-mobile'>
-                        <img alt='Icone Acupuntura' src={iconAcupuntura}/>
+                        <img alt='Icone Acupuntura' loading='lazy' src={iconAcupuntura}/>
                         <h3 className='title-servico-item-mobile'>Técnica de Torção Articular NamDã</h3>
                     </div>
                     <p className='text-servico-item-mobile'>
@@ -77,9 +77,9 @@ const Servicos = () => {
                     <button className='button-servico-item' name='Botão para atendimento de NamDã em Santos' onClick={() => {window.open('https://wa.me/5513996518092/?text=Ol%C3%A1,%20estou%20interessado%20em%20fazer%20uma%20sess%C3%A3o%20de%20NamD%C3%A3!', '_blank')}}>Agendar</button>
                 </div>
                 <div className='servico-item-mobile'>
-                    <img src={fitoterapiaChinesaEmSantos} alt='Foto de Fitoterapia Chinesa' className='image-servicos-terapias-mobile'/>
+                    <img src={fitoterapiaChinesaEmSantos} loading='lazy' alt='Foto de Fitoterapia Chinesa' className='image-servicos-terapias-mobile'/>
                     <div className='div-title-servico-item-mobile'>
-                        <img alt='Icone Acupuntura' src={iconVentosa}/>
+                        <img alt='Icone Acupuntura' loading='lazy' src={iconVentosa}/>
                         <h3 className='title-servico-item-mobile'>Fitoterapia Chinesa</h3>
                     </div>
                     <p className='text-servico-item-mobile'>
@@ -112,10 +112,10 @@ const Servicos = () => {
                         </p>
                         <button className='button-servico-item' name='Botão para atendimento de acupuntura em Santos' onClick={() => {window.open('https://wa.me/5513996518092/?text=Ol%C3%A1,%20estou%20interessado%20em%20fazer%20uma%20sess%C3%A3o%20de%20acupuntura!', '_blank')}}>Agendar</button>
                     </div>
-                    <img src={imageAcupuntura} alt='Foto de uma sessão de acupuntura'/>
+                    <img src={imageAcupuntura} loading='lazy' alt='Foto de uma sessão de acupuntura'/>
                 </div>
                 <div className='servico-item'>
-                    <img src={imagemVentosaterapia} alt='Foto de uma sessão de acupuntura'/>
+                    <img src={imagemVentosaterapia} loading='lazy' alt='Foto de uma sessão de acupuntura'/>
                     <div>
                         <div className='div-title-servico-item left-div'>
                             <h3 className='title-servico-item'>Ventosa</h3>
@@ -132,7 +132,7 @@ const Servicos = () => {
                 <div className='servico-item'>
                     <div>
                         <div className='div-title-servico-item'>
-                            <img alt='Icone Acupuntura' src={iconAcupuntura}/>
+                            <img alt='Icone Acupuntura' loading='lazy' src={iconAcupuntura}/>
                             <h3 className='title-servico-item'>Môxa</h3>
                         </div>
                         <p className='text-servico-item'>
@@ -142,14 +142,14 @@ const Servicos = () => {
                         </p>
                         <button className='button-servico-item' name='Botão para atendimento de Môxa em Santos' onClick={() => {window.open('https://wa.me/5513996518092/?text=Ol%C3%A1,%20estou%20interessado%20em%20fazer%20uma%20sess%C3%A3o%20de%20M%C3%B4xa!', '_blank')}}>Agendar</button>
                     </div>
-                    <img src={moxaEmSantos} alt='Foto de uma sessão de Môxa'/>
+                    <img src={moxaEmSantos} loading='lazy' alt='Foto de uma sessão de Môxa'/>
                 </div>
                 <div className='servico-item'>
-                    <img src={eletroAcupunturaEmSantos} alt='Foto de uma sessão de Eletroacupuntura'/>
+                    <img src={eletroAcupunturaEmSantos} loading='lazy' alt='Foto de uma sessão de Eletroacupuntura'/>
                     <div>
                         <div className='div-title-servico-item left-div'>
                             <h3 className='title-servico-item'>Eletroacupuntura</h3>
-                            <img alt='Icone Acupuntura' src={iconVentosa}/>
+                            <img alt='Icone Acupuntura' loading='lazy' src={iconVentosa}/>
                         </div>
                         <p className='text-servico-item left-text'>
                             A Acupuntura é uma terapia milenar que usa agulhas finas e estímulos em pontos específicos do corpo para tratar várias condições. É amplamente reconhecida por aliviar dores agudas e crônicas. No caso de dores agudas, como dores de cabeça, lesões musculares e pós-operatórias, a acupuntura estimula a liberação de substâncias analgésicas naturais, como endorfinas, reduzindo a sensação de dor. Também ajuda a relaxar os músculos tensos, melhorando a circulação sanguínea e acelerando a cicatrização.
@@ -162,7 +162,7 @@ const Servicos = () => {
                 <div className='servico-item'>
                     <div>
                         <div className='div-title-servico-item'>
-                            <img alt='Icone Acupuntura' src={iconAcupuntura}/>
+                            <img alt='Icone Acupuntura' loading='lazy' src={iconAcupuntura}/>
                             <h3 className='title-servico-item'>Técnica de Torção Articular NamDã</h3>
                         </div>
                         <p className='text-servico-item'>
@@ -172,14 +172,14 @@ const Servicos = () => {
                         </p>
                         <button className='button-servico-item' name='Botão para atendimento de NamDã em Santos' onClick={() => {window.open('https://wa.me/5513996518092/?text=Ol%C3%A1,%20estou%20interessado%20em%20fazer%20uma%20sess%C3%A3o%20de%20NamD%C3%A3!', '_blank')}}>Agendar</button>
                     </div>
-                    <img src={namdaEmSantos} alt='Foto de uma sessão de NamDã'/>
+                    <img src={namdaEmSantos} loading='lazy' alt='Foto de uma sessão de NamDã'/>
                 </div>
                 <div className='servico-item'>
-                    <img src={fitoterapiaChinesaEmSantos} alt='Foto de uma sessão de Fitoterapia Chinesa'/>
+                    <img src={fitoterapiaChinesaEmSantos} loading='lazy' alt='Foto de uma sessão de Fitoterapia Chinesa'/>
                     <div>
                         <div className='div-title-servico-item left-div'>
                             <h3 className='title-servico-item'>Fitoterapia Chinesa</h3>
-                            <img alt='Icone Acupuntura' src={iconVentosa}/>
+                            <img alt='Icone Acupuntura' loading='lazy' src={iconVentosa}/>
                         </div>
                         <p className='text-servico-item left-text'>
                             A Acupuntura é uma terapia milenar que usa agulhas finas e estímulos em pontos específicos do corpo para tratar várias condições. É amplamente reconhecida por aliviar dores agudas e crônicas. No caso de dores agudas, como dores de cabeça, lesões musculares e pós-operatórias, a acupuntura estimula a liberação de substâncias analgésicas naturais, como endorfinas, reduzindo a sensação de dor. Também ajuda a relaxar os músculos tensos, melhorando a circulação sanguínea e acelerando a cicatrização.

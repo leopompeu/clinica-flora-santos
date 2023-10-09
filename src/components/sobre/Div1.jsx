@@ -18,7 +18,7 @@ const Div1 = () => {
                         className='video'
                         alt="Video sobre clínica de acupuntura em Santos, a Clínica Flora Santos"
                         url="https://www.youtube.com/embed/TY-iB9r-2Ns"
-                        playIcon={<img className='video-playbutton' alt="Botão de play para video da Clínica de acupuntura em Santos" src={playclinicadeacupunturaemsantos}></img>}
+                        playIcon={<img className='video-playbutton' loading='lazy' alt="Botão de play para video da Clínica de acupuntura em Santos" src={playclinicadeacupunturaemsantos}></img>}
                         light={acupunturaEmSantosVideo}
                         playing={true}
                 /> 
@@ -37,7 +37,7 @@ const Div1 = () => {
                         className='video'
                         alt="Video sobre clínica de acupuntura em Santos, a Clínica Flora Santos"
                         url="https://www.youtube.com/embed/TY-iB9r-2Ns"
-                        playIcon={<img className='video-playbutton' alt="Botão de play para video da Clínica de acupuntura em Santos" src={playclinicadeacupunturaemsantos}></img>}
+                        playIcon={<img className='video-playbutton' loading='lazy' alt="Botão de play para video da Clínica de acupuntura em Santos" src={playclinicadeacupunturaemsantos}></img>}
                         light={acupunturaEmSantosVideo}
                         playing={true}
                 /> 

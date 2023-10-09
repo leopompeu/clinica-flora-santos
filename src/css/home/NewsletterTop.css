@@ -39,7 +39,7 @@
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%; /* 21px */
     letter-spacing: -0.14px;
     text-align: center;
@@ -132,7 +132,7 @@
     font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .input-newsletter-mobile::placeholder{
@@ -142,7 +142,7 @@
     font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .button-newsletter-mobile{

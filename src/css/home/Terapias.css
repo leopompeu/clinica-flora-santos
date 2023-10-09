@@ -10,13 +10,13 @@
 }
 
 .location-terapia{
-    color: var(--yellow-500, #B7B16C);
+    color: var(--yellow-500, #7B763D);
 
     /* Body/XL */
     font-family: Montserrat;
     font-size: 22px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: -0.22px;
 
     margin-top: 90px;
@@ -91,7 +91,7 @@
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%; /* 24px */
     letter-spacing: -0.16px;
 
@@ -164,6 +164,8 @@
     transition: all .2s;
     margin-bottom: 60px;
     margin-top: -20px;
+    height: 50px;
+    width: 50px;
 }
 
 .container-carousel{
@@ -171,6 +173,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: -50px;
 }
 
 .container-carousel .buttons button:first-child img{
@@ -179,7 +182,7 @@
 
 .container-carousel .buttons button img{
     height: 50px;
-    height: 50px;
+    width: 50px;
 }
 
 .container-carousel .buttons button:hover{
@@ -238,14 +241,14 @@
 .location-terapia-mobile{
     align-self: stretch;
 
-    color: var(--yellow-500, #B7B16C);
+    color: var(--yellow-500, #7B763D);
     text-align: center;
 
     /* Body/XS */
     font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%; /* 18px */
 }
 
@@ -323,7 +326,7 @@
     font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%; /* 18px */
 
     align-self: stretch;

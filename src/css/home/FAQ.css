@@ -7,12 +7,12 @@
 }
 
 .title-section-faq{
-    color: var(--yellow-500, #B7B16C);
+    color: var(--yellow-500, #7B763D);
     /* Body/XL */
     font-family: Montserrat;
     font-size: 22px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 160%; /* 35.2px */
     letter-spacing: -0.22px;
 }
@@ -40,7 +40,7 @@
                 font-family: Montserrat;
                 font-size: 16px;
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 500;
                 line-height: 150%; /* 24px */
                 letter-spacing: -0.16px;
             }
@@ -56,7 +56,7 @@
                     font-family: Montserrat;
                     font-size: 14px;
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 500;
                     line-height: 150%; /* 21px */
                     letter-spacing: -0.14px;
                 }
@@ -76,13 +76,13 @@
 }
 
 .title-section-faq-mobile{
-    color: var(--yellow-500, #B7B16C);
+    color: var(--yellow-500, #7B763D);
 
     /* Body/XS */
     font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%; /* 18px */
     line-height: 140%; /* 28px */
 }
